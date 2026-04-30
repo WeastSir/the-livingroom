@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Livingroom — Lernplatz reservieren statt suchen. Luzern.</title>
+<meta name="description" content="The Livingroom in Luzern: 24/7 offen, Lernplätze und Gruppenräume in Echtzeit reservierbar. Für Studierende der Partnerschulen kostenlos." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="dot"></span>the livingroom<em>.</em>
+    </a>
+    <div class="nav-links">
+      <a href="#konzept">Konzept</a>
+      <a href="#angebot">Angebot</a>
+      <a href="#raeume">Räume</a>
+      <a href="#standort">Standort</a>
+      <a href="#raeume" class="nav-cta">Reservieren</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <h1 class="hero-title">
+    Lernplatz <em>reservieren</em><br />
+    statt suchen.
+  </h1>
+  <p class="lead">
+    Bibliothek voll, Gruppenraum ausgebucht, halb sieben Uhr abends in der Prüfungsphase. The Livingroom in Luzern macht Schluss damit. Plan deinen Lernplatz im Voraus — oder komm einfach vorbei, 24/7.
+  </p>
+  <div class="hero-ctas">
+    <a href="#raeume" class="btn btn-primary">
+      Raum reservieren
+      <span class="arrow">→</span>
+    </a>
+    <a href="#konzept" class="btn btn-secondary">Wie's funktioniert</a>
+  </div>
+
+  <div class="hero-image parallax">
+    <img src="images/hero.jpg" alt="The Livingroom Eingangsbereich mit Lounge, Snackautomaten und Pflanzen" />
+  </div>
+</header>
+
+<!-- KONZEPT -->
+<section id="konzept" class="reveal">
+  <div class="eyebrow">Das Problem</div>
+  <h2 class="section-title">
+    Bibliotheken voll, Gruppenräume<br />
+    ausgebucht, <em>du wartest.</em>
+  </h2>
+  <p class="section-intro">
+    Hunderte Studierende in Luzern verlieren jeden Tag Zeit mit der Suche nach einem freien Platz — statt mit dem, wofür sie eigentlich da sind. Das Problem ist nicht fehlende Motivation. Es ist fehlende, planbare Infrastruktur.
+  </p>
+
+  <div class="concept-grid">
+    <div class="concept-image parallax">
+      <img src="images/upper-floor.jpg" alt="Obere Etage mit Schreibtischen, ergonomischen Stühlen und Tageslicht" />
+    </div>
+    <ul class="concept-list">
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div>
+          <strong>Offen, wenn du es brauchst</strong>
+          <p>Nicht um 14 Uhr — sondern abends, nachts, in der Prüfungsphase. Zugang rund um die Uhr per Studi-Badge.</p>
+        </div>
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 10h10M7 14h6"/></svg>
+        <div>
+          <strong>Reservation in Echtzeit</strong>
+          <p>Du siehst online, was frei ist, und buchst direkt. Kein Glücksspiel, kein Suchen.</p>
+        </div>
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1V9z"/></svg>
+        <div>
+          <strong>Gemacht für Studierende</strong>
+          <p>Kein Coworking Space, kein Café mit Konsumzwang. Ein Ort, der für dein Studium gedacht ist.</p>
+        </div>
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M12 4v0M2 12h2M20 12h2"/><circle cx="12" cy="12" r="2"/></svg>
+        <div>
+          <strong>Über die Schule, gratis für dich</strong>
+          <p>Deine Hochschule sichert das Kontingent — du nutzt es, ohne dafür zu bezahlen.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ANGEBOT -->
+<section id="angebot" class="reveal">
+  <div class="eyebrow">Was du bekommst</div>
+  <h2 class="section-title">Lernplätze, die <em>planbar</em> sind.</h2>
+  <p class="section-intro">Räume zum Buchen, offene Plätze ohne Reservation, Strom, Internet, Snacks — alles, was du für eine Session brauchst, am gleichen Ort.</p>
+
+  <div class="bento">
+    <!-- Hero tile: 24/7 -->
+    <div class="bento-tile tile-247">
+      <div class="tile-eyebrow">Immer offen</div>
+      <div class="big-num">24<em>/</em>7</div>
+      <p>Auch um zwei Uhr nachts. Auch am Sonntag. Zugang per Studi-Badge — du brauchst keine Öffnungszeiten zu checken.</p>
+    </div>
+
+    <!-- Gruppenräume -->
+    <div class="bento-tile tile-rooms">
+      <div>
+        <div class="tile-eyebrow">Reservierbar</div>
+        <h3>Gruppenräume <em>für dein Team</em></h3>
+        <p>Mehrere identische Räume mit Whiteboard, Bildschirm und Konferenztisch. Online buchbar in Echtzeit.</p>
+      </div>
+      <div class="room-pills">
+        <span class="room-pill">Whiteboard</span>
+        <span class="room-pill">Bildschirm</span>
+        <span class="room-pill">Bis 12 Pers.</span>
+      </div>
+    </div>
+
+    <!-- Sitzplätze -->
+    <div class="bento-tile tile-seats">
+      <div>
+        <div class="tile-eyebrow">Ohne Reservation</div>
+        <div class="big-num">~50</div>
+      </div>
+      <p>Offene Lernplätze auf zwei Etagen — Einzeltische, Lounge-Sessel, Stillzonen.</p>
+    </div>
+
+    <!-- Small tiles -->
+    <div class="bento-tile tile-small">
+      <svg class="tile-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 7h14l-1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+      <div>
+        <h3>Verpflegung</h3>
+        <p>Kaffee, Drinks, Snacks rund um die Uhr. Twint oder Karte.</p>
+      </div>
+    </div>
+    <div class="bento-tile tile-small">
+      <svg class="tile-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+      <div>
+        <h3>Strom &amp; WLAN</h3>
+        <p>Steckdose an jedem Platz, Glasfaser-Internet, USB-C.</p>
+      </div>
+    </div>
+    <div class="bento-tile tile-small">
+      <svg class="tile-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2C8 6 5 9 5 13a7 7 0 0 0 14 0c0-4-3-7-7-11z"/></svg>
+      <div>
+        <h3>Pause inklusive</h3>
+        <p>Lounge-Bereich mit Sesseln. Auch zum Durchatmen ist Platz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="raeume" class="reservation-section reveal">
+  <div class="inner">
+    <div class="eyebrow">Räume buchen</div>
+    <h2 class="section-title">Reservier dir <em>einen Gruppenraum.</em></h2>
+    <p class="section-intro">Mehrere identisch ausgestattete Gruppenräume — Whiteboard, Bildschirm, Konferenztisch für bis zu 12 Personen. Live-Reservation in 30-Minuten-Slots.</p>
+
+    <div class="rooms-showcase">
+      <div class="rooms-photo">
+        <img src="images/gruppenraum.jpg" alt="Gruppenraum mit Konferenztisch, Whiteboard und Bildschirm" />
+        <div class="photo-tags">
+          <span class="photo-tag">Whiteboard</span>
+          <span class="photo-tag">Bildschirm</span>
+          <span class="photo-tag">Bis 12 Personen</span>
+        </div>
+      </div>
+
+      <div class="rooms-status">
+        <div class="status-header">
+          <h3>Verfügbarkeit jetzt</h3>
+          <span class="live-dot">Live</span>
+        </div>
+        <div class="status-list">
+          <div class="status-row">
+            <span class="status-name">Gruppenraum 1</span>
+            <span class="room-status">Frei</span>
+          </div>
+          <div class="status-row">
+            <span class="status-name">Gruppenraum 2</span>
+            <span class="room-status occupied-status">Belegt bis 16:30</span>
+          </div>
+          <div class="status-row">
+            <span class="status-name">Gruppenraum 3</span>
+            <span class="room-status">Frei</span>
+          </div>
+          <div class="status-row">
+            <span class="status-name">Gruppenraum 4</span>
+            <span class="room-status">Frei ab 17:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="open-spaces">
+      <div class="open-icon">+</div>
+      <div class="open-text">
+        <h4>Offene Lernplätze</h4>
+        <p>~50 Plätze auf zwei Etagen — keine Reservation, einfach kommen.</p>
+      </div>
+      <span class="room-status">Meist genug frei</span>
+    </div>
+
+    <form class="reservation-card" onsubmit="event.preventDefault(); alert('Reservation erfasst — du erhältst eine Bestätigung per Mail.');">
+      <h3>Schnell reservieren</h3>
+      <div class="reservation-form">
+        <div class="form-row">
+          <label>Gruppenraum</label>
+          <select required>
+            <option>Gruppenraum 1</option>
+            <option>Gruppenraum 2</option>
+            <option>Gruppenraum 3</option>
+            <option>Gruppenraum 4</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Datum</label>
+          <input type="date" required />
+        </div>
+        <div class="form-row">
+          <label>Uhrzeit</label>
+          <input type="time" required />
+        </div>
+        <div class="form-row">
+          <label>Studi-E-Mail</label>
+          <input type="email" placeholder="dein.name@stud.hochschule.ch" required />
+        </div>
+        <button class="btn">
+          Buchen
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="reveal">
+  <div class="eyebrow">So sieht's aus</div>
+  <h2 class="section-title">Zwei Etagen, <em>verschiedene Stimmungen.</em></h2>
+  <div class="gallery">
+    <div class="gallery-item parallax"><img src="images/lounge-area.jpg" alt="Lange Holztische mit Blick auf die Strasse" /></div>
+    <div class="gallery-item parallax"><img src="images/upper-floor.jpg" alt="Obere Etage mit Schreibtischen und Lese-Lampen" /></div>
+  </div>
+</section>
+
+<!-- STANDORT -->
+<section id="standort" class="reveal">
+  <div class="eyebrow">So findest du uns</div>
+  <h2 class="section-title">In <em>Littau,</em> Luzern.</h2>
+  <p class="section-intro">Direkt an der Luzernerstrasse, gute ÖV-Anbindung. Auch Parkplätze in der Nähe.</p>
+
+  <div class="location-grid">
+    <div class="location-info">
+      <div class="eyebrow" style="margin-bottom: 8px;">Adresse</div>
+      <p class="address">
+        Luzernerstrasse 141c<br />
+        <span class="muted">6014 Luzern</span>
+      </p>
+      <p style="color: var(--ink-2); font-size: 14.5px;">Eingang über die automatische Schiebetür. Du kommst mit deinem Studi-Badge rein.</p>
+
+      <ul class="hours-list">
+        <li><strong>Mo – So</strong><span>24 Stunden</span></li>
+        <li><strong>Status</strong><span class="open">Offen</span></li>
+        <li><strong>Empfang vor Ort</strong><span>Mo – Fr · 09:00 – 17:00</span></li>
+      </ul>
+
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Luzernerstrasse+141c+6014+Luzern" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Route planen
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="map-frame">
+      <div id="leaflet-map" role="img" aria-label="Karte: Luzernerstrasse 141c, 6014 Luzern"></div>
+      <div class="map-actions">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Luzernerstrasse+141c+6014+Luzern" target="_blank" rel="noopener" class="outline">Route planen</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Luzernerstrasse+141c+6014+Luzern" target="_blank" rel="noopener">In Google Maps öffnen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners">
+  <div class="partners-inner">
+    <div class="partners-text">
+      <div class="eyebrow">Partner</div>
+      <h3>Ermöglicht durch unsere <em>Partnerschulen.</em></h3>
+      <p>Hochschulen sichern ihren Studierenden Kontingente — du nutzt den Livingroom kostenlos. Aktuell mit dabei: die <strong>Schweizerische Hotelfachschule Luzern</strong>. Weitere folgen.</p>
+    </div>
+    <div class="partners-logos">
+      <a href="https://www.shl.ch" target="_blank" rel="noopener" class="partner-logo" aria-label="Schweizerische Hotelfachschule Luzern">
+        <img src="images/shl-logo.png" alt="SHL · Schweizerische Hotelfachschule Luzern" />
+      </a>
+      <div class="partner-placeholder">Weitere folgen</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BIG -->
+<section class="cta-big">
+  <h2>Reservieren statt <em>suchen.</em></h2>
+  <p>Schau, was frei ist. Buch dir, was du brauchst. Komm vorbei, wenn du Zeit hast.</p>
+  <div class="hero-ctas" style="justify-content: center;">
+    <a href="#raeume" class="btn btn-primary">
+      Raum reservieren
+      <span class="arrow">→</span>
+    </a>
+    <a href="#standort" class="btn btn-secondary">Adresse ansehen</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo"><span class="dot"></span>the livingroom<em>.</em></a>
+      <p>Lernplätze für Studierende in Luzern. Reservierbar in Echtzeit, 24/7 zugänglich, gratis dank Partnerschulen.</p>
+    </div>
+    <div>
+      <h4>Besuchen</h4>
+      <ul>
+        <li><a href="#standort">Standort</a></li>
+        <li><a href="#angebot">Angebot</a></li>
+        <li><a href="#raeume">Räume</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="mailto:hallo@livingroom.lu">hallo@livingroom.lu</a></li>
+        <li><a href="tel:+41411234567">+41 41 123 45 67</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#" data-pending>Hausordnung</a></li>
+        <li><a href="#" data-pending>Datenschutz</a></li>
+        <li><a href="#" data-pending>Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Livingroom Luzern</span>
+    <span>Ein Ort zum Bleiben.</span>
+  </div>
+</footer>
+
+<!-- Leaflet map (CDN) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="scripts/main.js" defer></script>
+
+</body>
+</html>
