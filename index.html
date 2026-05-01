@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Livingroom — Lernplatz reservieren statt suchen. Luzern.</title>
-<meta name="description" content="The Livingroom in Luzern: 24/7 offen, Lernplätze und Gruppenräume in Echtzeit reservierbar. Für Studierende der Partnerschulen kostenlos." />
+<title>The Livingroom — Ein Wohnzimmer für Studierende in Luzern.</title>
+<meta name="description" content="The Livingroom in Luzern: 24/7 offen, 80 Lernplätze und Gruppenräume live verfügbar. Für Studierende der Partnerschulen kostenlos." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="stylesheet" href="styles/main.css" />
 </head>
@@ -23,7 +23,7 @@
       <a href="#angebot">Angebot</a>
       <a href="#raeume">Räume</a>
       <a href="#standort">Standort</a>
-      <a href="#raeume" class="nav-cta">Reservieren</a>
+      <a href="#raeume" class="nav-cta">Verfügbarkeit</a>
     </div>
   </div>
 </nav>
@@ -31,7 +31,7 @@
 <!-- HERO -->
 <header class="hero">
   <h1 class="hero-title">
-    Lernplatz <em>reservieren</em><br />
+    Lernplatz <em>buchen</em><br />
     statt suchen.
   </h1>
   <p class="lead">
@@ -39,7 +39,7 @@
   </p>
   <div class="hero-ctas">
     <a href="#raeume" class="btn btn-primary">
-      Raum reservieren
+      Raum buchen
       <span class="arrow">→</span>
     </a>
     <a href="#konzept" class="btn btn-secondary">Wie's funktioniert</a>
@@ -76,7 +76,7 @@
       <li>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 10h10M7 14h6"/></svg>
         <div>
-          <strong>Reservation in Echtzeit</strong>
+          <strong>Live-Verfügbarkeit</strong>
           <p>Du siehst online, was frei ist, und buchst direkt. Kein Glücksspiel, kein Suchen.</p>
         </div>
       </li>
@@ -84,7 +84,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1V9z"/></svg>
         <div>
           <strong>Gemacht für Studierende</strong>
-          <p>Kein Coworking Space, kein Café mit Konsumzwang. Ein Ort, der für dein Studium gedacht ist.</p>
+          <p>Ein Ort, der für dein Studium gedacht ist. Wohnlich wie ein Wohnzimmer, ausgestattet wie ein Arbeitsplatz.</p>
         </div>
       </li>
       <li>
@@ -102,7 +102,7 @@
 <section id="angebot" class="reveal">
   <div class="eyebrow">Was du bekommst</div>
   <h2 class="section-title">Lernplätze, die <em>planbar</em> sind.</h2>
-  <p class="section-intro">Räume zum Buchen, offene Plätze ohne Reservation, Strom, Internet, Snacks — alles, was du für eine Session brauchst, am gleichen Ort.</p>
+  <p class="section-intro">Räume zum Buchen, offene Plätze ohne Buchung, Strom, Internet, Snacks — alles, was du für eine Session brauchst, am gleichen Ort.</p>
 
   <div class="bento">
     <!-- Hero tile: 24/7 -->
@@ -115,7 +115,7 @@
     <!-- Gruppenräume -->
     <div class="bento-tile tile-rooms">
       <div>
-        <div class="tile-eyebrow">Reservierbar</div>
+        <div class="tile-eyebrow">Buchbar</div>
         <h3>Gruppenräume <em>für dein Team</em></h3>
         <p>Mehrere identische Räume mit Whiteboard, Bildschirm und Konferenztisch. Online buchbar in Echtzeit.</p>
       </div>
@@ -129,8 +129,8 @@
     <!-- Sitzplätze -->
     <div class="bento-tile tile-seats">
       <div>
-        <div class="tile-eyebrow">Ohne Reservation</div>
-        <div class="big-num">~50</div>
+        <div class="tile-eyebrow">Frei verfügbar</div>
+        <div class="big-num">80</div>
       </div>
       <p>Offene Lernplätze auf zwei Etagen — Einzeltische, Lounge-Sessel, Stillzonen.</p>
     </div>
@@ -164,8 +164,8 @@
 <section id="raeume" class="reservation-section reveal">
   <div class="inner">
     <div class="eyebrow">Räume buchen</div>
-    <h2 class="section-title">Reservier dir <em>einen Gruppenraum.</em></h2>
-    <p class="section-intro">Mehrere identisch ausgestattete Gruppenräume — Whiteboard, Bildschirm, Konferenztisch für bis zu 12 Personen. Live-Reservation in 30-Minuten-Slots.</p>
+    <h2 class="section-title">Buch dir <em>einen Gruppenraum.</em></h2>
+    <p class="section-intro">Mehrere identisch ausgestattete Gruppenräume — Whiteboard, Bildschirm, Konferenztisch für bis zu 12 Personen. Live-Verfügbarkeit in 30-Minuten-Slots.</p>
 
     <div class="rooms-showcase">
       <div class="rooms-photo">
@@ -207,13 +207,13 @@
       <div class="open-icon">+</div>
       <div class="open-text">
         <h4>Offene Lernplätze</h4>
-        <p>~50 Plätze auf zwei Etagen — keine Reservation, einfach kommen.</p>
+        <p>80 Plätze auf zwei Etagen — einfach kommen.</p>
       </div>
       <span class="room-status">Meist genug frei</span>
     </div>
 
-    <form class="reservation-card" onsubmit="event.preventDefault(); alert('Reservation erfasst — du erhältst eine Bestätigung per Mail.');">
-      <h3>Schnell reservieren</h3>
+    <form class="reservation-card" onsubmit="event.preventDefault(); alert('Buchung erfasst — du erhältst eine Bestätigung per Mail.');">
+      <h3>Schnell buchen</h3>
       <div class="reservation-form">
         <div class="form-row">
           <label>Gruppenraum</label>
@@ -311,11 +311,11 @@
 
 <!-- CTA BIG -->
 <section class="cta-big">
-  <h2>Reservieren statt <em>suchen.</em></h2>
+  <h2>Finden statt <em>suchen.</em></h2>
   <p>Schau, was frei ist. Buch dir, was du brauchst. Komm vorbei, wenn du Zeit hast.</p>
   <div class="hero-ctas" style="justify-content: center;">
     <a href="#raeume" class="btn btn-primary">
-      Raum reservieren
+      Raum buchen
       <span class="arrow">→</span>
     </a>
     <a href="#standort" class="btn btn-secondary">Adresse ansehen</a>
@@ -327,7 +327,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="#" class="logo"><span class="dot"></span>the livingroom<em>.</em></a>
-      <p>Lernplätze für Studierende in Luzern. Reservierbar in Echtzeit, 24/7 zugänglich, gratis dank Partnerschulen.</p>
+      <p>Lernplätze für Studierende in Luzern. Buchbar in Echtzeit, 24/7 zugänglich, gratis dank Partnerschulen.</p>
     </div>
     <div>
       <h4>Besuchen</h4>

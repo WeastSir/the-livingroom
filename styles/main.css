@@ -1,27 +1,27 @@
 :root {
-    --bg: #f7f5f0;
+    --bg: #F9F9F7;             /* Off-White paper */
     --surface: #ffffff;
-    --ink: #1a1816;
-    --ink-2: #5a544d;
-    --ink-3: #9a948b;
-    --moss: #6b4423;          /* warm walnut wood tone */
-    --moss-soft: #f0e9df;     /* light beige */
-    --line: rgba(0, 0, 0, 0.08);
-    --line-2: rgba(0, 0, 0, 0.04);
+    --ink: #333333;            /* Anthracite */
+    --ink-2: #6b6660;
+    --ink-3: #a09a90;
+    --moss: #6B8A6E;           /* darker sage for accent */
+    --moss-soft: #A7B8A8;      /* sage */
+    --moss-bg: #E8EFE9;        /* very light sage tint */
+    --line: rgba(51, 51, 51, 0.10);
+    --line-2: rgba(51, 51, 51, 0.05);
     --radius: 14px;
     --radius-lg: 22px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'Montserrat', -apple-system, sans-serif;
     background: var(--bg);
     color: var(--ink);
     font-size: 16px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-feature-settings: "ss01", "cv11";
   }
   .serif {
     font-family: 'Instrument Serif', Georgia, serif;
@@ -38,7 +38,7 @@
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 50;
     backdrop-filter: blur(16px) saturate(160%);
-    background: rgba(250, 250, 247, 0.78);
+    background: rgba(249, 249, 247, 0.85);
     border-bottom: 1px solid var(--line);
   }
   .nav-inner {
@@ -51,26 +51,32 @@
   }
   .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 0;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: -0.02em;
     text-decoration: none;
     color: var(--ink);
+    position: relative;
+    padding-left: 14px;
   }
   .logo .dot {
-    width: 6px; height: 6px;
-    background: var(--moss);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px; height: 26px;
+    background: var(--moss-soft);
     border-radius: 50%;
-    margin-right: 9px;
-    transform: translateY(-2px);
+    z-index: -1;
   }
   .logo em {
     font-family: 'Instrument Serif', serif;
     font-style: italic;
     font-weight: 400;
     margin-left: 4px;
+    color: var(--moss);
   }
 
   .nav-links { display: flex; gap: 4px; align-items: center; }
@@ -368,7 +374,7 @@
     border-color: transparent;
   }
   .tile-247:hover { transform: translateY(-2px); border-color: transparent; }
-  .tile-247 .tile-eyebrow { color: #d4b896; }
+  .tile-247 .tile-eyebrow { color: #A7B8A8; }
   .tile-247 .big-num {
     font-family: 'Instrument Serif', serif;
     font-size: clamp(96px, 12vw, 156px);
@@ -379,7 +385,7 @@
   }
   .tile-247 .big-num em {
     font-style: italic;
-    color: #d4b896;
+    color: #A7B8A8;
   }
   .tile-247 p { color: rgba(255,255,255,0.65); max-width: 280px; }
 
@@ -460,11 +466,11 @@
     padding: 100px 24px;
   }
   .reservation-section .inner { max-width: 1240px; margin: 0 auto; }
-  .reservation-section .eyebrow { color: #d4b896; }
-  .reservation-section .eyebrow::before { background: #d4b896; }
+  .reservation-section .eyebrow { color: var(--moss-soft); }
+  .reservation-section .eyebrow::before { background: var(--moss-soft); }
   .reservation-section h2 { color: var(--bg); }
-  .reservation-section h2 em { color: #d4b896; }
-  .reservation-section .section-intro { color: rgba(255,255,255,0.65); }
+  .reservation-section h2 em { color: var(--moss-soft); }
+  .reservation-section .section-intro { color: rgba(255,255,255,0.7); }
 
   /* ── Rooms showcase ─────────────────────── */
   .rooms-showcase {
@@ -606,7 +612,7 @@
   .open-icon {
     font-family: 'Instrument Serif', serif;
     font-size: 32px;
-    color: #d4b896;
+    color: #A7B8A8;
     line-height: 1;
     flex-shrink: 0;
   }
@@ -669,7 +675,7 @@
   }
   .form-row input:focus, .form-row select:focus {
     outline: none;
-    border-color: #d4b896;
+    border-color: #A7B8A8;
     background: rgba(255,255,255,0.09);
   }
   .form-row select option { background: var(--ink); }
@@ -680,7 +686,7 @@
     padding: 12px 20px;
     white-space: nowrap;
   }
-  .reservation-card .btn:hover { background: #d4b896; }
+  .reservation-card .btn:hover { background: #A7B8A8; }
 
   @media (max-width: 860px) {
     .reservation-form {
